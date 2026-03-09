@@ -1,0 +1,432 @@
+:root {
+    --primary: #27ad9f;
+    --accent: #236eaf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #e8faff;
+    color: #0f172a;
+    padding-top: 90px;
+    line-height: 1.6;
+}
+
+.h1cs{
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+
+/* ---------------- NAVBAR ---------------- */
+
+.navbar {
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-img{
+    width: 140px;
+}
+
+.ja-logo{
+    width: 130px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.ig{
+    width: 32px;
+}
+
+.tiktok{
+    width: 36px;
+}
+
+.gmail{
+    width: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0f172a;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.nav-pag{
+    margin-top: 4px;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+
+
+/* ---------------- HERO ---------------- */
+
+.hero {
+    padding: 120px 20px 80px 20px;
+    text-align: center;
+    color: var(--primary);
+    background: linear-gradient(white, #e8faff);
+}
+
+.hero img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero h3{
+    color: rgba(226, 16, 16, 0.9);
+    padding: 1rem;
+}
+
+
+
+/* ---------------- CHI SIAMO ---------------- */
+
+.chisiamo-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+
+/* ---------------- CARD ---------------- */
+
+.card-cs,
+.card-cs2 {
+    width: 100%;
+    background: white;
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.card-cs:hover,
+.card-cs2:hover{
+    transform: translateY(-6px);
+}
+
+.card-cs img{
+    width: 70%;
+    max-width: 650px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 25px 0;
+}
+
+.fotocs{
+    width: 55%;
+    max-width: 500px;
+    height: auto;
+    margin: 25px 0;
+}
+
+
+
+/* ---------------- TESTO ---------------- */
+
+.pcs{
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 17px;
+}
+
+.elimina {
+    list-style: none;
+    font-size: 17px;
+    margin: 8px 0;
+}
+
+
+
+/* ---------------- PRODUCTS ---------------- */
+
+.products {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 35px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+
+
+/* ---------------- MODAL ---------------- */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    width: 70%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.6rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* ---------------- FORM ---------------- */
+
+#order-form input,
+#order-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: var(--accent);
+}
+
+
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    padding: 35px;
+    text-align: center;
+    color: var(--primary);
+    background: linear-gradient(#e8faff, #c0e8f5);
+    margin-top: 60px;
+}
+
+.btn-prenota {
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-prenota:hover {
+    background: var(--accent);
+}
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+
+/* Tablet e Desktop Piccoli */
+@media (max-width: 1024px) {
+    .nav-container {
+        padding: 15px;
+    }
+    
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
+
+/* Smartphone (Sotto i 768px) */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px; /* Ridotto per navbar più piccola */
+    }
+
+    /* Navbar Mobile */
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-img, .ja-logo {
+        width: 110px; /* Loghi leggermente più piccoli */
+    }
+
+    /* Hero */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Chi Siamo & Card */
+    .chisiamo-container {
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .card-cs, .card-cs2 {
+        padding: 20px;
+    }
+
+    .card-cs img, .fotocs {
+        width: 100%; /* Occupa tutto lo spazio su mobile */
+    }
+
+    .pcs {
+        font-size: 15px;
+    }
+
+    /* Prodotti */
+    .products {
+        grid-template-columns: 1fr; /* Una sola colonna */
+        margin: 40px auto;
+    }
+
+    .card img {
+        height: 200px; /* Immagini meno alte per non allungare troppo la pagina */
+    }
+
+    /* Modal e Form */
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    #order-form input, #order-form textarea {
+        width: 100%;
+    }
+    
+    .zephyrair{
+        margin-bottom: 5rem;
+    }
+
+}
+
+/* Smartphone Molto Piccoli (Sotto i 480px) */
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+
+    .submit-btn, .btn-prenota {
+        width: 100%; /* Pulsanti a tutta larghezza per facilitare il touch */
+    }
+     .zephyrair{
+        margin-bottom: 20rem;
+    }
+    @media (max-width: 768px) {
+    /* ... altre regole ... */
+
+    .hero {
+        padding: 100px 20px 60px 20px; /* Aumentiamo il padding superiore della sezione */
+    }
+
+    .zephyrair {
+        margin-bottom: 80px; /* Spinge il testo sotto ancora più in basso */
+        width: 150px;       /* Opzionale: rimpiccioliamo leggermente il logo */
+        display: block;     /* Assicura che si comporti come un blocco */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+}
