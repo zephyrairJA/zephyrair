@@ -41,3 +41,23 @@ function copyEmail(event) {
         });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav-links");
+
+if(toggle && nav){
+
+toggle.addEventListener("click", function(e){
+
+e.stopPropagation();
+
+nav.classList.toggle("active");
+toggle.classList.toggle("active");
+
+});
+
+}
+
+});
+
